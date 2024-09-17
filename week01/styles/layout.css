@@ -1,0 +1,11 @@
+.container-flex {
+    display: flex
+}
+
+.container-grid {
+    display:grid
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

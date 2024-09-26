@@ -3,9 +3,45 @@
 }
 
 .container-grid {
-    display:grid
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 1fr 1fr 1fr */
+    grid-template-rows: auto 1fr auto;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    /* height: 70px; */
+    background-color: grey;
+    grid-column: 1/4;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none
+}
+
+main {
+    background-color: lightgray;
+    color: black;
+    grid-column: 1/3;
+}
+
+.aside-container {
+    color: black;
+    grid-column: 3/4;
+}
+
+footer {
+    height: 70px;
+    background-color: grey;
+    grid-column: 1/4;
 }

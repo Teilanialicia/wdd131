@@ -1,0 +1,22 @@
+/*
+are centered on the page using margin: 1rem auto,
+include a faint border,
+use appropriate padding, and
+have a blueish background color of your choice.
+ */
+
+ .body {
+    font: "roboto";
+ }
+
+ .header {
+    max-width: 640px;
+ }
+
+ .main {
+    max-width: 640px;
+ }
+
+ .footer {
+    max-width: 640px;
+ }

@@ -7,13 +7,13 @@ nav ul {
     /* justify-content: space-between; */
 }
 
-nav li {
+/* nav li {
     display: contents;
-}
+} */
 
-header h1 {
+/* header h1 {
     width: 60%;
-}
+} */
 
 .menu::before {
     content: none;

@@ -6,15 +6,16 @@
     --fifth-color: #ffffff;
 }
 
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    ;
 }
 
 .menu {
@@ -54,8 +55,6 @@ h2 {
 
 header {
     display: grid;
-    /* grid-gap: 1rem; */
-    /* padding: 20px; */
     box-shadow: 0 0 10px #3E363F;
     grid-column: 1/4;
     background-color: var(--first-color);
@@ -86,6 +85,7 @@ li a:hover {
 nav a {
     display: block;
     border-radius: 6px;
+
 }
 
 nav li {
@@ -124,7 +124,6 @@ nav li {
     flex-direction: column;
     text-align: center;
     padding: 0%;
-    border: 0%;
     margin: 0%;
 }
 
@@ -134,3 +133,26 @@ footer {
     grid-column: 1/4;
     text-align: center;
 }
+
+@media (min-width: 32rem){
+    header {
+        display: flex;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+    
+    nav li {
+        display: contents;
+    }
+    
+    header h1 {
+        width: 60%;
+    }
+    
+    .menu::before {
+        content: none;
+    }
+} 

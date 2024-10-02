@@ -1,0 +1,116 @@
+:root {
+    /* colors */
+    --border;
+}
+
+{
+    /* margin and padding and block alll set to 0 */
+
+}
+
+html, body {
+    /* font */
+}
+
+header, footer {
+    /* color */
+    text-align: center;
+    padding:1.5rem
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+/* this is to make an affect of bottom border on the header effect (could also use a border on bottom of header */
+aside {
+    background-color:blue;
+    padding: .5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    /* this is so the font of the paragraph is not suished int to the h2 */
+    padding: 1rem;
+}
+
+card. {
+    background-color: white;
+    border-radius: .5rem;
+    /* you could play with margin and padding */
+}
+
+.card h2 {
+    text-align: center;
+}
+.col-2 {
+    display: grid;
+    grid-gap: .5rem;
+    /* this below makes two columns */
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.label {
+    font-weight: 700;
+    font-size: .85rem;
+    text-align: right;
+}
+
+.value {
+    font-size: .9rem;
+}
+
+
+
+@media (min-width: 750px){
+   
+    h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .card {
+        border: var(--border);
+        box-shadow: 0 0 2rem ;
+        opacity: .8;
+    }
+
+    .card h2 {
+
+    }
+
+    .data {
+        /* child of main */
+        /* you have to make the main relative so that below can be absolute */
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .weather h2::after{
+        /* get a weather emoji */
+        content '<3';
+        position: absolute;
+        right: 3rem;
+        top: 1.25rem;
+    }
+
+    /* for h2 could put a background with opacity */
+
+}
+
+

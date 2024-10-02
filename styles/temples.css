@@ -21,12 +21,15 @@
     display: block;
     /* background-color: var(--fourth-color); */
     /* color: var(--fifth-color); */
+    position: absolute;
+    right: 0;
 }
 
 /* how to put a nav bar in hamburger stack when vp changes to mobile */
 
 .menu::before {
     content: "☰";
+    
 }
 
 .menu.show::before {
@@ -44,7 +47,7 @@ a {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -57,6 +60,11 @@ header {
     box-shadow: 0 0 10px #3E363F;
     grid-column: 1/4;
     background-color: var(--first-color);
+    padding: 1rem;
+}
+
+main {
+padding: 1rem;
 }
 
 nav {
@@ -112,8 +120,8 @@ nav li {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 30%));
-    grid-gap: 10px;
-    padding: 10px;
+    grid-gap: 2rem;
+    padding: 3rem;
     justify-content: center;
 }
 
@@ -127,7 +135,7 @@ nav li {
 }
 
 footer {
-    height: 70px;
+    padding: 1rem;
     background-color: #B0A3D4;
     grid-column: 1/4;
     text-align: center;

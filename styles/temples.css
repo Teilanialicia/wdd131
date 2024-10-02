@@ -29,7 +29,7 @@
 
 .menu::before {
     content: "☰";
-    
+
 }
 
 .menu.show::before {
@@ -61,10 +61,11 @@ header {
     grid-column: 1/4;
     background-color: var(--first-color);
     padding: 1rem;
+    align-items: center;
 }
 
 main {
-padding: 1rem;
+    padding: 1rem;
 }
 
 nav {
@@ -141,25 +142,25 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 32rem){
+@media (min-width: 32rem) {
     header {
         display: flex;
     }
-    
+
     nav ul {
         flex-direction: row;
         /* justify-content: space-between; */
     }
-    
+
     nav li {
         display: contents;
     }
-    
+
     header h1 {
         width: 60%;
     }
-    
+
     .menu::before {
         content: none;
     }
-} 
+}

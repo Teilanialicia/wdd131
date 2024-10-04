@@ -113,6 +113,10 @@ main {
         opacity: .8;
     }
 
+    .card h2 {
+        
+    }
+
     .data {
         /* child of main */
         /* you have to make the main relative so that below can be absolute */

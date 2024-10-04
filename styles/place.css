@@ -129,7 +129,7 @@ main {
 
     .weather h2::after{
         /* get a weather emoji */
-        content: '⛅';
+        content: '';
         position: absolute;
         right: 2.5rem;
         top: 1rem;

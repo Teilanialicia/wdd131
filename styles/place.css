@@ -9,21 +9,23 @@
 * {
     /* margin and padding and block all set to 0 */
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     /* font */
     font-family: "Cardo", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-header, footer {
+header,
+footer {
     /* color */
     text-align: center;
-    padding:1.5rem
+    padding: 1.5rem
 }
 
 h1 {
@@ -37,7 +39,7 @@ h1 {
 
 /* this is to make an affect of bottom border on the header effect (could also use a border on bottom of header */
 aside {
-    background-color:var(--dark);
+    background-color: var(--dark);
     padding: .5rem;
 }
 
@@ -65,12 +67,13 @@ h2 {
     background-color: white;
     border-radius: .5rem;
     /* you could play with margin and padding */
-    
+
 }
 
 .card h2 {
     text-align: center;
 }
+
 .col-2 {
     display: grid;
     grid-gap: .5rem;
@@ -92,15 +95,15 @@ h2 {
 
 
 main {
-    background-color:var(--dark);
+    background-color: var(--dark);
     padding-bottom: .5rem;
 }
 
-@media (min-width: 32rem){
-   
+@media (min-width: 32rem) {
+
     h1 {
         font-size: 3rem;
-        
+
     }
 
     main {
@@ -109,13 +112,11 @@ main {
 
     .card {
         border: var(--red);
-        box-shadow: 0 0 2rem ;
+        box-shadow: 0 0 2rem;
         opacity: .8;
     }
 
-    .card h2 {
-        
-    }
+    .card h2 {}
 
     .data {
         /* child of main */
@@ -131,9 +132,9 @@ main {
         right: 1rem;
     }
 
-    .weather h2::after{
+    .weather h2::after {
         /* get a weather emoji */
-        content: '';
+        content: '⛅';
         position: absolute;
         right: 2.5rem;
         top: 1rem;
@@ -146,5 +147,3 @@ main {
     /* for h2 could put a background with opacity */
 
 }
-
-

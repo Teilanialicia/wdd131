@@ -1,4 +1,5 @@
 :root {
+    /* colors */
     --purple: #B0A3D4;
     --red: #DD403A;
     --dark: #3E363F;
@@ -6,6 +7,7 @@
 }
 
 * {
+    /* margin and padding and block all set to 0 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +15,7 @@
 
 html,
 body {
+    /* font */
     font-family: "Cardo", serif;
     font-weight: 400;
     font-style: normal;
@@ -20,6 +23,7 @@ body {
 
 header,
 footer {
+    /* color */
     text-align: center;
     padding: 1.5rem
 }
@@ -32,6 +36,8 @@ h1 {
     font-style: normal;
     color: var(--dark);
 }
+
+/* this is to make an affect of bottom border on the header effect (could also use a border on bottom of header */
 aside {
     background-color: var(--dark);
     padding: .5rem;
@@ -49,6 +55,7 @@ img {
 }
 
 h2 {
+    /* this is so the font of the paragraph is not suished int to the h2 */
     padding: 1rem;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -59,6 +66,8 @@ h2 {
 .card {
     background-color: white;
     border-radius: .5rem;
+    /* you could play with margin and padding */
+
 }
 
 .card h2 {
@@ -68,6 +77,7 @@ h2 {
 .col-2 {
     display: grid;
     grid-gap: .5rem;
+    /* this below makes two columns */
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
 }
@@ -106,6 +116,8 @@ main {
     }
 
     .data {
+        /* child of main */
+        /* you have to make the main relative so that below can be absolute */
         position: absolute;
         top: 2rem;
         left: 1rem;

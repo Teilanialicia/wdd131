@@ -105,9 +105,85 @@ const temples = [
     }
   ];
 
-function newTempleCard(){
+  // variables for filter function 
 
+  const newLink = document.querySelector("#new");
+  const oldLink = document.querySelector("#old");
+  const bigLink = document.querySelector("#big");
+  const smallLink = document.querySelector("#small");
+  const allLink = document.querySelector("#all");
+
+  // creating event, anonymous function for new temples must use "" around numbers
+
+  newLink.addEventListener("click", () => (
+    newTempleCard(temples.filter(temple => temple.dedicated > "2000"))
+  ));
+
+// creating all the other links old below
+  oldLink.addEventListener("click", () => (
+  newTempleCard(temples.filter(temple => temple.dedicated < "1900"))
+  ));
+
+// big
+  bigLink.addEventListener("click", () => (
+    newTempleCard(temples.filter( temple => temple.area > 90000))
+  ));
+
+// small
+  smallLink.addEventListener("click", () => (
+    newTempleCard(temples.filter( temple => temple.area < 10000))
+  ))
+
+// all
+  allLink.addEventListener("click", () => (
+    newTempleCard(temples.filter( temple => temple.templeName != NaN))
+  ));
+
+// QESUTION FOR CHAT GPT: what is valid syntax for an arrow function, and shwo me use cases?
+
+// Loop through the array and create "temple cards" for each temple by displaying:
+// The name of the temple.
+// The location of the temple.
+// The date the temple was dedicated.
+// The total area of the temple in square feet.
+// The provided image of the temple (an absolute address). Make sure to provide an appropriate alt value such as the name of the temple.
+// Use native lazy loading to each temple image
+
+newTempleCard(temples);
+
+function newTempleCard(temples){
+  document.querySelector(".image-grid").innerHTML = ""
+    temples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p"); 
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.textContent = temple.location;
+        dedication.textContent = temple.dedicated;
+        area.textContent = temple.area;
+        img.textContent = temple.imageUrl;
+        img.setAttribute("src", temple.imageUrl)
+        img.setAttribute("alt", `Picture of the !{temple.temple.Name}`);
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "175vw");
+        
+        // append the newly created temple elements and their content to the cards 
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);  
+
+        // append cards to their parent class to div "image-grid"
+
+        document.querySelector(".image-grid").appendChild(card);
+    });
 
 };
 
-newTempleCard(temples);
+
+

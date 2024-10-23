@@ -1,0 +1,13 @@
+body{
+      .crimson-text-regular {
+        font-family: "Crimson Text", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+h1, h2, h3 {
+    font-family: "Inria Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+}

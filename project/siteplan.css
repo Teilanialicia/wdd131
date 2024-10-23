@@ -1,13 +1,55 @@
-body{
-      .crimson-text-regular {
-        font-family: "Crimson Text", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+:root {
+    --darkgrey: var(--#555);
+    --alightgrey:var(--#717D96);
+    --blightgrey:var(--#9FA4B0);
+    --aredaccent:var(--#D23B52);
+    --bredaccent:var(--#95182A);
+    --blackaccent:var(--#020202);
 }
 
-h1, h2, h3 {
+
+body {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #020202;
+}
+
+nav {
+    background-color: var(--blightgrey);
+    color: var(--blackaccent);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #95182A;
+}
+footer {
+    background-color: #1A202C;
+    color: white;
+}
+
+.inria {
     font-family: "Inria Serif", serif;
-        font-weight: 400;
-        font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cardo {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #020202;
 }

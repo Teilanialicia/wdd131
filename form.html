@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script defer src="scripts/getdates.js"></script>
+    <meta name="description" content="Form For WDD 131">
+    <meta name="author" content="Teilani Norton">
+    <title>Form - WDD 131 - Dynamic Web Fundamentals - Teilani Norton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <form action="review.html" method="get" class="wf1">
+            <!-- All inputs should be 44px minimum tall -->
+        
+        <fieldset>
+            <legend>Product Details</legend>
+            <label for="product-menu">Product Model
+            <select name="select option" id="product-name" required>
+                <option value="products" disabled selected>Choose Product &#9662;</option>
+            </select>            
+            </label>
+                
+            <label>
+                Rating
+                <label for="radio1"><input type="radio" id="radio1" name="star" required>&#9733</label>
+                <label for="radio2"><input type="radio" id="radio2" name="star" required>&#9733 &#9733</label>
+                <label for="radio3"><input type="radio" id="radio3" name="star" required>&#9733 &#9733 &#9733</label>
+                <label for="radio4"><input type="radio" id="radio4" name="star" required>&#9733 &#9733 &#9733 &#9733</label>
+                <label for="radio5"><input type="radio" id="radio5" name="star" required>&#9733 &#9733 &#9733 &#9733 &#9733</label>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Product Delivery</legend>
+            <label for="date">Date of installation<input type="date"></label>
+        
+
+            
+            <label>
+                Which did you find useful in the product? (Check all that apply)
+                <label><input type="checkbox" id="options" name="options" value="durability">Durability</label>
+                <label><input type="checkbox" id="options" name="options" value="Ease of use">Ease of use</label>
+                <label><input type="checkbox" id="options" name="options" value="performance">Performance</label>
+                <label><input type="checkbox" id="options" name="options" value="design">Design</label>
+            </label>
+        </fieldset>
+
+        <fieldset>  
+            <legend>Your Experience</legend> 
+        
+            <label>Written review<input type="textarea" id="review" name="review" placeholder="My experience..."></label>
+
+    
+            <label>
+                Your name<input type="text" id="name" name="name" placeholder="Wiliam Wallace">
+            </label>
+
+            
+
+        </fieldset>
+            <label for="submit-button">
+            <input type="submit" id="post-review" name="post-review">
+            </label>
+        </form>
+    </main>
+    <footer class="primary-background">
+        <span id="currentYear" class="header-primary"> Teilani Norton | United States</span>
+        <p id="lastModified" class="header-secondary">Last modification:</p>
+    </footer>
+</body>
+
+</html>

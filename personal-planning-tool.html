@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Planning Tool</title>
+    <link rel="stylesheet" href="personal-planning-tool.css">
+</head>
+<body>
+
+    <h1>Personal Planning Tool</h1>
+
+    <form id="planning-form">
+        <h2>Identify and Prioritize Your Roles</h2>
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" placeholder="e.g. relationships, interests" required>
+
+        <label for="priority">Priority Level (1-5):</label>
+        <input type="text" id="priority" name="priority" placeholder="Priority Level" required>
+
+        <h2>Set Goals for Each Role</h2>
+        <label for="goal">Goal:</label>
+        <input type="text" id="goal" name="goal" placeholder="Your goal for this role" required>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <h2>Weekly Planning</h2>
+        <label for="activity">Weekly Activity:</label>
+        <input type="text" id="activity" name="activity" placeholder="What will you do this week?" required>
+
+        <label for="activity-time">Schedule Time:</label>
+        <input type="text" id="activity-time" name="activity-time" placeholder="When will you do it?" required>
+
+        <h2>Daily Reflection</h2>
+        <label for="reflection">Reflection:</label>
+        <textarea id="reflection" name="reflection" rows="4" placeholder="What did you accomplish today?" required></textarea>
+
+        <input type="submit" value="Submit Plan">
+    </form>
+    
+    <div class="previous-checkins">
+        <h2>Previous Inputs / Check-ins:</h2>
+        <div id="checkin-list"></div>
+    </div>
+
+</body>
+</html>

@@ -3,7 +3,7 @@ ptag = document.getElementById("counter")
 
 // if else 
 if (submissions !== 0) {
-	ptag.textContent = `have submitted a review this number of times: ${submissions}`;
+	ptag.textContent = `You have submitted a review this number of times: ${submissions}`;
 } else {
 	ptag.textContent = `This is your first visit. 🥳 Welcome!`;
 }

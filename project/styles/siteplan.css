@@ -1,0 +1,387 @@
+:root {
+    --darkgrey: var(--#555);
+    --alightgrey: var(--#717D96);
+    --blightgrey: var(--#9FA4B0);
+    --aredaccent: var(--#D23B52);
+    --bredaccent: var(--#95182A);
+    --blackaccent: var(--#020202);
+    --purple: #B0A3D4;
+    --red: #DD403A;
+    --dark: #3E363F;
+    --light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #020202;
+}
+
+header * {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+h2,
+h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page-intro h2 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.page-intro p {
+    padding-bottom: 9rem;
+}
+
+footer {
+    background-color: #1A202C;
+    color: white;
+}
+
+.inria {
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cardo {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #020202;
+}
+
+/* code for place/home page */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1.5rem
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #95182A;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    font-size: 1.75;
+}
+
+header img {
+    width: 4rem;
+    height: 4rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    text-shadow: #9FA4B0, 2px;
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+.page-intro {
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+aside {
+    background-color: var(--dark);
+    padding: .5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.col-2 {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.label {
+    font-weight: 700;
+    font-size: .85rem;
+    text-align: right;
+}
+
+.value {
+    content: '⛅';
+    font-size: .9rem;
+}
+
+main {
+    padding-bottom: .5rem;
+}
+
+
+/* nav styling below */
+
+nav {
+    background-color: var(--first-color);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /* background-color: var(--blightgrey); */
+    color: var(--blackaccent);
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* small view menu drop down need to add the a's instead */
+
+.menu::before {
+    content: "☰";
+
+}
+
+.menu.show::before {
+    content: "X"
+}
+
+.show a {
+    display: block;
+    padding-top: 1rem;
+}
+
+nav a {
+    display: none;
+}
+
+.weather-header img {
+    width: 0px;
+}
+
+@media (min-width: 32rem) {
+
+    header {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu::before {
+        content: none;
+    }
+
+    main {
+        position: relative;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .card {
+        border: var(--red);
+        box-shadow: 0 0 2rem;
+        opacity: .8;
+        width: 25%;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .data h2 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+
+    }
+
+    .weather-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weather-header h2 {
+        float: left;
+        padding: 0px;
+    }
+
+    .weather-header img {
+        width: 5rem;
+        padding: 0px;
+    }
+
+    svg {
+        display: none;
+    }
+}
+
+
+/* form stuff */
+
+.wf1 input[type="text"],
+.wf1 input[type="textarea"],
+.wf1 input[type="email"],
+.wf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-bottom: .75rem;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    color: #95182A;
+    padding: 0 .5rem;
+}
+
+/* submit buttom */
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#95182A, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px green;
+}
+
+/* temples styling */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 50%));
+    grid-gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+}
+
+
+.image-grid figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
